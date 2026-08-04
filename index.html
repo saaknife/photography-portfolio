@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="摄影作品展示页面">
+  <title>摄影作品集</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#top">摄影作品集</a>
+    <nav class="site-nav" aria-label="页面导航">
+      <a href="#works">作品</a>
+      <a href="#about">关于</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <picture class="hero-media">
+        <source media="(max-width: 720px)" srcset="images/hero-mobile.webp">
+        <img src="images/hero.webp" alt="摄影作品集封面" fetchpriority="high">
+      </picture>
+      <div class="hero-scrim"></div>
+      <div class="hero-copy">
+        <p class="hero-kicker">Photography</p>
+        <h1>摄影作品集</h1>
+        <p class="hero-summary">以光影为语言，收藏每个值得凝视的瞬间。</p>
+      </div>
+      <a class="hero-scroll" href="#works" aria-label="浏览作品">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m6 9 6 6 6-6"></path>
+        </svg>
+      </a>
+    </section>
+
+    <section class="works" id="works">
+      <div class="section-head">
+        <h2>作品 <span class="works-count" id="worksCount">6 件作品</span></h2>
+        <div class="filters" role="group" aria-label="按版式筛选">
+          <button class="filter-btn is-active" type="button" data-filter="all">全部</button>
+          <button class="filter-btn" type="button" data-filter="portrait">竖幅</button>
+          <button class="filter-btn" type="button" data-filter="landscape">横幅</button>
+          <button class="filter-btn" type="button" data-filter="square">方形</button>
+        </div>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <article class="card card--portrait" data-filter="portrait" style="--ratio: 2161 / 3838">
+          <button class="card-btn" type="button" data-title="作品 01" data-meta="竖幅 · 2161×3838" aria-label="查看作品 01">
+            <img src="images/work-03.webp" alt="作品 01" width="1200" height="2131" loading="lazy">
+            <span class="card-overlay">
+              <span class="card-info">
+                <span class="card-title">作品 01</span>
+                <span class="card-meta">竖幅 · 2161×3838</span>
+              </span>
+              <span class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M15 3h6v6"></path>
+                  <path d="M9 21H3v-6"></path>
+                  <path d="M21 3l-7 7"></path>
+                  <path d="M3 21l7-7"></path>
+                </svg>
+              </span>
+            </span>
+          </button>
+        </article>
+
+        <article class="card card--landscape" data-filter="landscape" style="--ratio: 1919 / 1280">
+          <button class="card-btn" type="button" data-title="作品 02" data-meta="横幅 · 1919×1280" aria-label="查看作品 02">
+            <img src="images/work-04.webp" alt="作品 02" width="1500" height="1001" loading="lazy">
+            <span class="card-overlay">
+              <span class="card-info">
+                <span class="card-title">作品 02</span>
+                <span class="card-meta">横幅 · 1919×1280</span>
+              </span>
+              <span class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M15 3h6v6"></path>
+                  <path d="M9 21H3v-6"></path>
+                  <path d="M21 3l-7 7"></path>
+                  <path d="M3 21l7-7"></path>
+                </svg>
+              </span>
+            </span>
+          </button>
+        </article>
+
+        <article class="card card--portrait" data-filter="portrait" style="--ratio: 1080 / 1890">
+          <button class="card-btn" type="button" data-title="作品 03" data-meta="竖幅 · 1080×1890" aria-label="查看作品 03">
+            <img src="images/work-02.webp" alt="作品 03" width="1080" height="1890" loading="lazy">
+            <span class="card-overlay">
+              <span class="card-info">
+                <span class="card-title">作品 03</span>
+                <span class="card-meta">竖幅 · 1080×1890</span>
+              </span>
+              <span class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M15 3h6v6"></path>
+                  <path d="M9 21H3v-6"></path>
+                  <path d="M21 3l-7 7"></path>
+                  <path d="M3 21l7-7"></path>
+                </svg>
+              </span>
+            </span>
+          </button>
+        </article>
+
+        <article class="card card--landscape" data-filter="landscape" style="--ratio: 1422 / 800">
+          <button class="card-btn" type="button" data-title="作品 04" data-meta="横幅 · 1422×800" aria-label="查看作品 04">
+            <img src="images/work-05.webp" alt="作品 04" width="1400" height="788" loading="lazy">
+            <span class="card-overlay">
+              <span class="card-info">
+                <span class="card-title">作品 04</span>
+                <span class="card-meta">横幅 · 1422×800</span>
+              </span>
+              <span class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M15 3h6v6"></path>
+                  <path d="M9 21H3v-6"></path>
+                  <path d="M21 3l-7 7"></path>
+                  <path d="M3 21l7-7"></path>
+                </svg>
+              </span>
+            </span>
+          </button>
+        </article>
+
+        <article class="card card--square" data-filter="square" style="--ratio: 1 / 1">
+          <button class="card-btn" type="button" data-title="作品 05" data-meta="方形 · 640×640" aria-label="查看作品 05">
+            <img src="images/work-01.webp" alt="作品 05" width="640" height="640" loading="lazy">
+            <span class="card-overlay">
+              <span class="card-info">
+                <span class="card-title">作品 05</span>
+                <span class="card-meta">方形 · 640×640</span>
+              </span>
+              <span class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M15 3h6v6"></path>
+                  <path d="M9 21H3v-6"></path>
+                  <path d="M21 3l-7 7"></path>
+                  <path d="M3 21l7-7"></path>
+                </svg>
+              </span>
+            </span>
+          </button>
+        </article>
+
+        <article class="card card--landscape" data-filter="landscape" style="--ratio: 1467 / 800">
+          <button class="card-btn" type="button" data-title="作品 06" data-meta="横幅 · 1467×800" aria-label="查看作品 06">
+            <img src="images/work-06.webp" alt="作品 06" width="1400" height="763" loading="lazy">
+            <span class="card-overlay">
+              <span class="card-info">
+                <span class="card-title">作品 06</span>
+                <span class="card-meta">横幅 · 1467×800</span>
+              </span>
+              <span class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M15 3h6v6"></path>
+                  <path d="M9 21H3v-6"></path>
+                  <path d="M21 3l-7 7"></path>
+                  <path d="M3 21l7-7"></path>
+                </svg>
+              </span>
+            </span>
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-inner">
+        <h2>关于</h2>
+        <p>以安静的方式陈列摄影作品，让观看回归影像本身。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>摄影作品集</span>
+    <span>© 2026</span>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="作品查看">
+    <button class="lightbox-close" type="button" aria-label="关闭">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M18 6 6 18"></path>
+        <path d="m6 6 12 12"></path>
+      </svg>
+    </button>
+    <button class="lightbox-prev" type="button" aria-label="上一张">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="m15 18-6-6 6-6"></path>
+      </svg>
+    </button>
+    <button class="lightbox-next" type="button" aria-label="下一张">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="m9 18 6-6-6-6"></path>
+      </svg>
+    </button>
+    <figure class="lightbox-stage">
+      <img id="lightboxImg" src="" alt="">
+      <figcaption class="lightbox-caption">
+        <strong id="lightboxTitle"></strong>
+        <span id="lightboxMeta"></span>
+      </figcaption>
+    </figure>
+    <span class="lightbox-count" id="lightboxCount"></span>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
